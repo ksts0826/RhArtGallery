@@ -8,21 +8,40 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.mjs
-    siteTitle: `Emilia`,
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    //siteTitle: `Emilia`,
+    siteTitle: `ぽっぽの美術館`,
+    siteTitleAlt: `ぽっぽの美術館`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
     siteUrl: `https://emilia.lekoarts.de`,
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
-    siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    //siteLanguage: `en`,
+    siteLanguage: `ja`,
+    //author: `kouichi`,
+author: "kouichi",
   },
   trailingSlash: `always`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      //options: {},//ここを書き換えた。
+      options: {
+         name: `ぽっぽ`,
+        location: `Japan`,
+        formatString: "YYYY/MM/DD",
+        socialMedia: [
+            {
+              title: `Product`,
+              href: `https://www.craypas.co.jp/products/painting-school/011/0028/167172.html`
+            },
+            {
+              title: `Desk`,
+              href: `https://www.tansu-gen.jp/products/49600907l`
+
+            }
+          ]
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
