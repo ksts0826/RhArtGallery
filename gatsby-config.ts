@@ -86,5 +86,10 @@ author: "kouichi",
     },
   ].filter(Boolean) as Array<PluginRef>,
 }
-
+module.exports = {
+  siteMetadata: {
+    siteUrl: "https://ksts0826.github.io/RhArtGallery",// https://github.com/ksts0826/RhArtGallery
+  },
+  pathPrefix: "/RhArtGallery",
+}
 export default config
