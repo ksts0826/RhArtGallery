@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
     siteTitle: `ぽっぽの美術館`,
     siteTitleAlt: `ぽっぽの美術館`,
     siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://emilia.lekoarts.de`,
+    //siteUrl: `https://emilia.lekoarts.de`,
     siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
     siteImage: `/banner.jpg`,
     //siteLanguage: `en`,
@@ -86,10 +86,7 @@ author: "kouichi",
     },
   ].filter(Boolean) as Array<PluginRef>,
 }
-module.exports = {
-  siteMetadata: {
-    siteUrl: "https://ksts0826.github.io/RhArtGallery",// https://github.com/ksts0826/RhArtGallery
-  },
-  pathPrefix: "/RhArtGallery",
-}
+
+
+
 export default config
