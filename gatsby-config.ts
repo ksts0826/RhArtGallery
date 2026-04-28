@@ -86,7 +86,9 @@ author: "kouichi",
     },
   ].filter(Boolean) as Array<PluginRef>,
 }
-
+module.exports = {
+  pathPrefix: `/RhArtGallery`,
+}
 
 
 export default config
