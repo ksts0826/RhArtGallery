@@ -18,11 +18,12 @@ const config: GatsbyConfig = {
     //siteLanguage: `en`,
     siteLanguage: `ja`,
     //author: `kouichi`,
-author: "kouichi",
+    author: "kouichi",
   },
   trailingSlash: `always`,
   plugins: [
     {
+      
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
       //options: {},//ここを書き換えた。
@@ -37,7 +38,7 @@ author: "kouichi",
             },
             {
               title: `Desk`,
-              href: `https://www.tansu-gen.jp/products/49600907l`
+              href: `https://www.tansu-gen.jp/products/49600907?variant=45613303496870/`
 
             }
           ]
@@ -84,6 +85,10 @@ author: "kouichi",
         open: false,
       },
     },
+    // git hub pages コメント反映のため↓3行追加
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ].filter(Boolean) as Array<PluginRef>,
 }
 
