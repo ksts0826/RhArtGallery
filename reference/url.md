@@ -2,3 +2,5 @@ You can find more themes at themes.lekoarts.de and visit my personal website to 
 
 * https://themes.lekoarts.de/
 * https://www.lekoarts.de/
+* GitHub
+  * https://github.com/LekoArts/gatsby-starter-portfolio-emilia
